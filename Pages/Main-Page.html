@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrubstitute Cleaners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e8c7;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+            padding: 20px;
+        }
+        .buttons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: #8bc34a;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            width: 150px;
+            text-align: center;
+            display: block;
+        }
+        .button:hover {
+            background-color: #689f38;
+        }
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+        }
+        p {
+            font-size: 1.5em;
+            color: #666;
+            padding: 10px;
+        }
+        .content {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            width: 40%;
+            padding: 10px;
+        }
+        .images {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .large-image {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .small-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .small-image {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='meet-cleaners.html'">Meet the cleaners</button>
+            <button class="button" onclick="window.location.href='services.html'">Services</button>
+            <button class="button" onclick="window.location.href='contact-us.html'">Contact us!</button>
+        </div>
+        <h1>SCRUBSTITUTE CLEANERS</h1>
+        <div class="content">
+            <p>WE'RE YOUR ONLY SUBSTITUTE FOR CLEAN!</p>
+            <p>This is going to be a brief description of the company and values.</p>
+            <p>will have 1-5 reviews as well advertisement/sale/discount</p>
+        </div>
+        <div class="images">
+            <div class="large-image"></div>
+            <div class="small-images">
+                <div class="small-image"></div>
+                <div class="small-image"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
