@@ -1,0 +1,88 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e8c7;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+            padding: 20px;
+        }
+        .buttons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+        }
+        .button {
+            background-color: #8bc34a;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            width: 150px;
+            text-align: center;
+            display: block;
+        }
+        .button:hover {
+            background-color: #689f38;
+        }
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+        }
+        p {
+            font-size: 1.5em;
+            color: #666;
+            padding: 10px;
+        }
+        .content {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            width: 40%;
+            padding: 10px;
+        }
+        .images {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .large-image {
+            width: 200px;
+            height: 200px;
+            background-color: #ddd;
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .small-images {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .small-image {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            padding: 10px;
+        }
