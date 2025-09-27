@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e8c7; /* Beige background from image */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center; /* Center-align content */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align to left */
+    margin-bottom: 30px; /* Space below buttons */
+}
+
+.button {
+    background-color: #8bc34a; /* Green from image */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0; /* Vertical spacing between buttons */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 200px; /* Fixed width for consistency */
+    text-align: center;
+    text-decoration: none; /* For <a> tags */
+    display: block; /* Ensure full width within flex */
+}
+
+.button:hover {
+    background-color: #689f38; /* Darker green on hover */
+}
+
+h1 {
+    font-size: 4em; /* Large font size to match image */
+    color: #333;
+    font-weight: bold; /* Bold for emphasis */
+    margin: 0 0 40px 0; /* Space below heading */
+    text-transform: uppercase; /* Uppercase like image */
+    font-family: 'Times New Roman', serif; /* Serif font for image style */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between service columns */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.servicesColumn {
+    flex: 1; /* Equal width for each column */
+    min-width: 250px; /* Minimum width to prevent squishing */
+    background-color: #8bc34a; /* Green background */
+    padding: 20px;
+    border: 1px solid #689f38; /* Optional border for definition */
+    border-radius: 10px; /* Rounded corners */
+    height: 300px; /* Fixed height to match image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesColumn h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.servicesColumn p {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons {
+        align-items: center; /* Center buttons on mobile */
+    }
+    .button {
+        width: 150px; /* Reduce width on mobile */
+    }
+    .content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+    .servicesColumn {
+        min-width: 100%; /* Full width on mobile */
+        height: auto; /* Adjust height dynamically */
+    }
+    h1 {
+        font-size: 2.5em; /* Reduce heading size on mobile */
+    }
+}
