@@ -3,36 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="../Styles/contactUs.css">
+    <meta name="description" content="Contact Scrubstitute Cleaners for professional cleaning services. Get in touch today!">
+    <meta name="title" content="Scrubstitute Cleaners - Contact Us">
+    <title>Scrubstitute Cleaners - Contact Us</title>
+    <link rel="stylesheet" href="../Styles/mainPage.css">
 </head>
 <body>
     <div class="container">
-        <div class="buttons">
-            <a href="../index.html" class="button">Home</a>
-            <a href="meetTheCleaners.html" class="button">Meet the Cleaners</a>
-            <a href="Services.html" class="button">Services</a>
-            <a href="Gallery.html" class="button">Gallery</a>
-        </div>
-        <div class="content">
+        <header>
+            <a href="../index.html"><img src="../images/logo.png" alt="Scrubstitute Cleaners Logo" class="logo"></a>
+            <div class="buttons">
+                <a href="../index.html" class="button">Home</a>
+                <a href="meetTheCleaners.html" class="button">Meet the Cleaners</a>
+                <a href="Services.html" class="button">Services</a>
+                <a href="Gallery.html" class="button">Gallery</a>
+            </div>
+        </header>
+        <h1>CONTACT US</h1>
+        <div class="contact-columns">
             <div class="contactColumn">
                 <h2>Email</h2>
-                <p>Fill in email stuff here</p>
+                <p><a href="mailto:info@scrubstitutecleaners.com">info@scrubstitutecleaners.com</a></p>
             </div>
             <div class="contactColumn">
                 <h2>Phone Numbers</h2>
-                <p>Fill in phone number stuff here</p>
+                <p>+1 (234) 567-8901</p>
             </div>
             <div class="contactColumn">
                 <h2>Addresses</h2>
-                <p>fill in address stuff here</p>
+                <p>123 Clean St, City, State</p>
             </div>
         </div>
-        <div class="contactLink">
-                <h3>Send us and inquery here!</h3>
-                <a href="https://forms.gle/hwkbTkn4iR8X6nLs6" class="form-link" target="_blank"></a>
+        <div class="contact-link">
+            <h3>Send us an inquiry here!</h3>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" class="form-link">Submit Inquiry</button>
+            </form>
+            <p id="success" style="display:none; color:green;">Thank you! We'll contact you soon.</p>
         </div>
-        </div>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(e) {
+                if (this.checkValidity()) {
+                    e.preventDefault();
+                    document.getElementById('success').style.display = 'block';
+                    this.reset();
+                    setTimeout(() => document.getElementById('success').style.display = 'none', 3000);
+                } else {
+                    e.preventDefault();
+                }
+            });
+        </script>
     </div>
 </body>
 </html>
