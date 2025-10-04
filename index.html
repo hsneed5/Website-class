@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrubstitute Cleaners</title>
-    <link rel="stylesheet" href="Styles/mainPage.css">
+    <meta name="description" content="Welcome to Scrubstitute Cleaners - Professional cleaning services for homes and businesses. Contact us today!">
+    <meta name="title" content="Scrubstitute Cleaners - Home Page">
+    <title>Scrubstitute Cleaners - Home Page</title>
+    <link rel="stylesheet" href="Styles/mainPage.css"> 
 </head>
 <body>
     <div class="container">
-        <div class="buttons">
-            <a href="Pages/meetTheCleaners.html" class="button">Meet the Cleaners</a>
-            <a href="Pages/Services.html" class="button">Services</a>
-            <a href="Pages/ContactUs.html" class="button">Contact us!</a>
-            <a href="Pages/Gallery.html" class="button">Gallery</a>
-        </div>
-        <h1>SCRUBSTITUTE CLEANERS</h1>
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="Scrubstitute Cleaners Logo" class="logo"></a>
+            <div class="buttons">
+                <a href="Pages/meetTheCleaners.html" class="button">Meet the Cleaners</a>
+                <a href="Pages/Services.html" class="button">Services</a>
+                <a href="Pages/ContactUs.html" class="button">Contact us!</a>
+                <a href="Pages/Gallery.html" class="button">Gallery</a>
+                <a href="https://www.google.com/maps" target="_blank" class="button">Map</a>
+                <a href="https://www.facebook.com" target="_blank" class="button">Facebook</a>
+            </div>
+        </header>
+        <h1>SCRUBSTITUTE CLEANING SERVICES</h1>
         <div class="content">
             <p>WE'RE YOUR ONLY SUBSTITUTE FOR CLEAN!</p>
-            <p>This is going to be a brief description of the company and values.</p>
-            <p>will have 1-5 reviews as well advertisement/sale/discount</p>
+            <p>This is a brief description of our company values: quality, reliability, and customer satisfaction.</p>
+            <ul class="reviews">
+                <li>Review 1: "Great service!" - Jane D.</li>
+                <li>Review 2: "Highly recommend!" - John S.</li>
+            </ul>
+            <p><strong>Special Offer:</strong> 10% off your first cleaning!</p>
         </div>
         <div class="images">
-            <div class="large-image"></div>
+            <div class="large-image"><img src="images/large-clean.jpg" alt="Before and after cleaning of a living room"></div>
             <div class="small-images">
-                <div class="small-image"></div>
-                <div class="small-image"></div>
+                <div class="small-image"><img src="images/small-clean1.jpg" alt="Clean kitchen counter"></div>
+                <div class="small-image"><img src="images/small-clean2.jpg" alt="Clean bathroom"></div>
             </div>
         </div>
+        <table class="pricing">
+            <tr><th>Service</th><th>Price</th></tr>
+            <tr><td>Residential</td><td>$100</td></tr>
+            <tr><td>Commercial</td><td>$200</td></tr>
+        </table>
+        <a href="Pages/ContactUs.html" class="cta-button">Book Now</a>
     </div>
 </body>
 </html>

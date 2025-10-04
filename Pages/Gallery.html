@@ -1,48 +1,51 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="../Styles/gallery.css">
+    <meta name="description" content="View our gallery of cleaning projects by Scrubstitute Cleaners.">
+    <meta name="title" content="Scrubstitute Cleaners - Gallery">
+    <title>Scrubstitute Cleaners - Gallery</title>
+    <link rel="stylesheet" href="../Styles/mainPage.css">
 </head>
 <body>
     <div class="container">
-        <div class="buttons">
-            <a href="../index.html" class="button">Home</a>
-            <a href="meetTheCleaners.html" class="button">Meet the Cleaners</a>
-            <a href="Services.html" class="button">Services</a>
-            <a href="ContactUs.html" class="button">Contact Us!</a>
-        </div>
-    </div>
-    <div class="slideshow">
+        <header>
+            <a href="../index.html"><img src="../images/logo.png" alt="Scrubstitute Cleaners Logo" class="logo"></a>
+            <div class="buttons">
+                <a href="../index.html" class="button">Home</a>
+                <a href="meetTheCleaners.html" class="button">Meet the Cleaners</a>
+                <a href="Services.html" class="button">Services</a>
+                <a href="ContactUs.html" class="button">Contact Us!</a>
+            </div>
+        </header>
+        <h1>GALLERY</h1>
+        <div class="slideshow">
             <input type="radio" name="slide" id="slide1" checked>
             <input type="radio" name="slide" id="slide2">
             <input type="radio" name="slide" id="slide3">
-            
             <div class="slides">
                 <div class="slide">
-                    <img src="https://via.placeholder.com/600x400?text=Image+1" alt="Image 1">
+                    <img src="https://via.placeholder.com/600x400?text=Clean+Living+Room" alt="Clean living room after service">
                 </div>
                 <div class="slide">
-                    <img src="https://via.placeholder.com/600x400?text=Image+2" alt="Image 2">
+                    <img src="https://via.placeholder.com/600x400?text=Clean+Kitchen" alt="Clean kitchen counter after service">
                 </div>
                 <div class="slide">
-                    <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3">
+                    <img src="https://via.placeholder.com/600x400?text=Clean+Office" alt="Clean office space after service">
                 </div>
             </div>
-
             <div class="navigation">
                 <label for="slide1" class="nav-dot"></label>
                 <label for="slide2" class="nav-dot"></label>
                 <label for="slide3" class="nav-dot"></label>
             </div>
-
             <div class="controls">
                 <label for="slide3" class="prev">❮</label>
                 <label for="slide2" class="next">❯</label>
             </div>
         </div>
+        <a href="../Pages/ContactUs.html" class="cta-button">Book Now</a>
     </div>
 </body>
 </html>
