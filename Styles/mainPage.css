@@ -42,15 +42,13 @@ h1 {
 }
 
 .button {
-    padding: 12px 24px; /* Mobile: ~48px tap size */
-    color: #333; /* Accessibility: Better contrast */
-    background-color: #8bc34a;
-    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #8bc34a; /* Green buttons */
+    border-radius: 5px;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
-    display: block;
-    width: 200px;
 }
 
 .button:hover {
